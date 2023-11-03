@@ -6,7 +6,7 @@ let number = Math.floor(Math.random() * 50);
 btn.addEventListener("click", function () {
   let input = document.getElementById("userInput").value;
 
-  if (isNaN(input) || input < 1 || input > 100) {
+  if (isNaN(input) || input < 1 || input > 50) {
     output.innerHTML =
       "Invalid input. Please enter a number between 1 and 100.";
   } else if (input == number) {
